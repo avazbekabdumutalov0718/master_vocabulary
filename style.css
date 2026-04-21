@@ -1,0 +1,54 @@
+body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+}
+
+.glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 1.25rem;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #1E293B;
+    border-top: 1px solid #334155;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    z-index: 40;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #94A3B8;
+    font-size: 10px;
+}
+
+.feedback-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #F59E0B;
+    color: #0F172A;
+    padding: 12px 18px;
+    border-radius: 9999px;
+    font-weight: bold;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+}
+
+.locked-section {
+    filter: grayscale(1);
+    opacity: 0.5;
+    pointer-events: none;
+}
