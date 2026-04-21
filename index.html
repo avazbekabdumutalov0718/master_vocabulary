@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasteryIELTS | Mobile-First Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pb-24">
+
+    <header class="p-5 flex justify-between items-center bg-slate-900 sticky top-0 z-50">
+        <h1 class="text-xl font-bold tracking-tight text-amber-500">MasteryIELTS</h1>
+        <div class="flex gap-5 text-slate-400">
+            <button onclick="navigate('search')">🔍</button>
+            <button onclick="navigate('saved')">🔖</button>
+            <button onclick="navigate('profile')">👤</button>
+        </div>
+    </header>
+
+    <main id="app-content" class="px-5 py-4 space-y-6">
+        </main>
+
+    <button onclick="openFeedback()" class="feedback-btn">
+        💬 Feedback
+    </button>
+
+    <nav class="bottom-nav">
+        <button onclick="navigate('home')" class="nav-item"><span>🏠</span><span>Home</span></button>
+        <button onclick="navigate('skills')" class="nav-item"><span>📚</span><span>Skills</span></button>
+        <button onclick="navigate('vocabulary')" class="nav-item"><span>📖</span><span>Vocab</span></button>
+        <button onclick="navigate('tests')" class="nav-item"><span>📝</span><span>Tests</span></button>
+        <button onclick="navigate('progress')" class="nav-item"><span>📊</span><span>Stats</span></button>
+    </nav>
+
+    <div id="modal-container" class="hidden fixed inset-0 bg-black/80 z-[60] flex items-center justify-center p-5">
+        <div id="modal-content" class="bg-slate-800 w-full max-w-md rounded-2xl p-6 relative"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
